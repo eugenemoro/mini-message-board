@@ -1,0 +1,44 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+body {
+  background-color: lightgray;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 1em;
+}
+
+.message {
+  border-bottom: 1px solid black;
+}
+
+.header-btn {
+  background-color: black;
+  color: white;
+  font-size: 1.3rem;
+  padding: .5em 1em;
+  border: none;
+  border-radius: 5px;
+}
+
+.message-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+form {
+  div {
+    margin-bottom: 1em;
+  }
+  input {
+    display: block;
+  }
+  textarea {
+    display: block;
+  }
+}
+

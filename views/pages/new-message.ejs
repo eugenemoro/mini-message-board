@@ -1,0 +1,16 @@
+<%- include('../partials/head', {title}) %>
+<%- include('../partials/header', {title}) %>
+<body>
+  <form method="post" action="/new">
+    <div class="input-block">
+      <label for="author">Author</label>
+      <input type="text" name="author" id="author" required/>
+    </div>
+    <div class="input-block">
+      <label for="message">Message</label>
+      <textarea name="message" id="message" required></textarea>
+    </div>
+    <div class="form-buttons"><input type="submit" value="Submit"></div>
+  </form>
+</body>
+<%- include('../partials/footer') %>
