@@ -1,5 +1,7 @@
-#! /usr/bin/env node
+// run with a parameter (db URL) from CLI 
 
+#! /usr/bin/env node
+const { argv } = require('node:process');
 const { Client } = require('pg');
 require('dotenv').config();
 
@@ -20,7 +22,7 @@ VALUES
 async function main() {
   console.log('seeding...');
   const client = new Client({
-    connectionString: `postgresql://${process.env.DB_USER}:${process.env.DB_PWD}@${process.env.DB_PATH}/${process.env.DB_NAME}`,
+    connectionString: argv[2],
   });
   await client.connect();
   await client.query(SQL);
