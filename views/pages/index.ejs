@@ -2,7 +2,7 @@
 <%- include('../partials/header', {title}) %>
 <body>
   <% for (let i = messages.length - 1; i >= 0; i -= 1) {%>
-    <% const messageLink = '/message/' + i %>
+    <% const messageLink = '/message/' + messages[i].id %>
     <div class="message">
       <div class="message-head">
         <div>
